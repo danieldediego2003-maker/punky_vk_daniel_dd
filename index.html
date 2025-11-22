@@ -1,166 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <title>punky_vk</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="dani de punky_vk">
-    <meta name="description" content="pagina de musica metal y sus variantes">
-    <meta name="keywords" content="Punky_vk">
-    <meta name="robots" content="noindex">
-    <meta name="google-site-verification" content="8EYm4qdOaU0L8tRw9c1HsjSbo_JOK0Jjlxaa4OtQAA">
-    <meta name="punky_vk.title" content="dani de punky_vk">
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-    <meta http-equiv="content-language" content="es-es">
-    <meta http-equiv="refresh" content="10; URL=file:///E:/punky_vk/punky_vk.html">
-    <meta http-equiv="Page Enter" content="blendTrans(duration=4)">
-    <meta http-equiv="Page Exit" content="revealTrans(duration=1,5 transition=5)">
-    
-    <!-- Comentario para desactivar temporalmente un párrafo -->
-    <!-- <p>Este párrafo está desactivado y no se mostrará en la página.</p> -->
-    
-    <link rel="stylesheet" type="text/css" href="mi primera pagina web.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>punky_vk</title>
+  <meta name="description" content="dominio de punky_vk">
     <link rel="shortcut icon" type="image/x-icon" href="imagenes/punkyvk.ico">
-    
-    <style type="text/css"> 
-        body {
-            font-size: 40px;
-            color: blue; 
-            border: 1px solid;
-        }
-        table, tr, td { 
-            border: 1px solid;
-        }
-		
-    </style>
-	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
-</head>
+  <style>
+    /* ---------- Reset simple ---------- */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:#0f172a;background:#f8fafc;line-height:1.4}
 
+    /* ---------- Contenedor ---------- */
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* ---------- Cabecera / Nav ---------- */
+    header{background:linear-gradient(90deg,#0ea5a9,#2563eb);color:white;padding:18px 0;border-radius:10px}
+    .brand{font-weight:700;font-size:1.25rem}
+    nav{display:flex;gap:12px;align-items:center}
+    .nav-right{margin-left:auto;display:flex;gap:8px}
+    a.btn{background:rgba(255,255,255,0.12);color:white;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    a.btn:hover{background:rgba(255,255,255,0.18)}
+
+    /* ---------- Hero ---------- */
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px 0}
+    .hero h1{margin:0;font-size:clamp(1.6rem,3.5vw,2.4rem)}
+    .lead{color:#0f172a;opacity:0.85}
+    .cta{margin-top:12px}
+
+    /* ---------- Tarjetas de caracter�sticas ---------- */
+    .grid{display:grid;gap:16px}
+    .features{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:white;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .card h3{margin:0 0 8px 0}
+
+    /* ---------- Secci�n de ejemplo de contenido ---------- */
+    .two-col{display:grid;grid-template-columns:1fr;gap:18px}
+
+    /* ---------- Formulario ---------- */
+    form{display:flex;flex-direction:column;gap:10px}
+    input[type=text],input[type=email],textarea{padding:10px;border-radius:8px;border:1px solid #d1d5db;font-size:1rem}
+    button.primary{background:#0ea5a9;color:white;border:none;padding:10px 14px;border-radius:8px;font-weight:700}
+    button.primary:hover{opacity:0.92}
+
+    /* ---------- Pie ---------- */
+    footer{margin-top:24px;padding:16px 0;color:#475569}
+
+    /* ---------- Responsivo ---------- */
+    @media(min-width:800px){
+      .hero{grid-template-columns:1fr 420px}
+      .two-col{grid-template-columns:2fr 1fr}
+      nav{align-items:center}
+    }
+  </style>
+</head>
 <body>
-    <header> 
-        punky_vk
-    </header>
-    
-    <section id="content">
-        <h1>punk rock</h1>
-        <hr>
-        <h2>grupos de metal por comunidades</h2>
-        <ol>
-            <li><b>valencia</b>
-                <ul>
-                    <li>fatiga</li>
-                    <li>a tercio pelao</li>
-                </ul>
-            </li>
-            <li><b>madrid</b>
-                <ul>
-                    <li>def con dos</li>
-                    <li>xpresident</li>
-                    <li>koma</li>
-                </ul>
-            </li>
-            <li><b>bilbao</b>
-                <ul>
-                    <li>lendakaris muertos</li>
-                    <li>bourbon kings</li>
-                    <li>dikers</li>
-                </ul>
-            </li>
-        </ol>
-        
-        <h3>tecnicismos de punk</h3>
-        <dl>
-            <dt>pogo</dt>
-            <dd>baile de empujones</dd> 
-            <dt>nu metal</dt>
-            <dd>rap con metal</dd>
-            <dt>metal</dt>
-            <dd>musica con gutural es decir la voz desgarrada</dd>
-        </dl>
-        
-        <h1 id="fecha-hora">Cargando...</h1>
-        <script> 
-            let ahora = new Date();
-            console.log(ahora);
-        </script>
-        <script> 
-            let fecha = new Date(2025, 8, 18); 
-            console.log(fecha);
-        </script>
-        
-        <li><a href="file:///E:/punky_vk/index.txt">HTML</a></li>
-        
-        <table>
-            <tr>
-                <td>abejarock</td>
-                <td>salamanca</td>
-                <td>bejar</td>
-            </tr>
-            <tr>
-                <td>juergasrock</td>
-                <td>almeria</td>
-                <td>adra</td>
-            </tr>
-        </table>
-        
-        <div>
-            <video src="videos/todo_gira.mkv"></video>
+  <header>
+    <div class="container" style="display:flex;align-items:center;gap:16px">
+      <div class="brand">punky_vk</div>
+      <nav style="flex:1">
+        <a href="#" style="color:white;text-decoration:none;margin-right:12px">Inicio</a>
+        <a href="#features" style="color:white;text-decoration:none;margin-right:12px">quien es punky_vk</a>
+        <a href="#contact" style="color:white;text-decoration:none">Contacto</a>
+        <div class="nav-right">
+          <a class="btn" href="#">Iniciar</a>
         </div>
-        
-        <audio src="audios/nuestra_guerra.mp3" controls></audio>
-        
-        
-        <form action="datos de contacto" method="post" id="contacto">
-            <fieldset>
-                <legend>información de interés</legend>
-                solo lectura:
-<form action="servidor.html" method="get>
-<fieldset>
-<legend>información de interes</legend>
-</fieldset>
-	solo lectura:<input type="text" name="usuario" value="sololectura"readonly></br>
-     usuario:<input type="text" name="usuario" value username value="nombre" required></br>
-     contraseña:<input type="password" name="pass" id="contraseña" required></br>
-	socio<input type="checkbox" name socio checked="true"></br>
-	sexo<input type="radio" name="sexo" value="m">masculino</br>
-<fieldset> 
-<legend> categorias</legend>	
-</fieldset>
-	<input type="radio" name="sexo" value="f">femenino</br>
-			<input type="radio" name="sexo" value="otros">otros</br>
-    temas: <input type="radio" name="temas" value="act"> accion</br>
-			<input type="radio" name="temas" value="hi"> historia</br>
-			<input type="radio" name="temas" value="fic"> ficción</br>
- temas: <input type="checkbox" name="temas" value="act"> accion</br>
-			<input type="checkbox" name="temas" value="hi"> historia</br>
-			<input type="checkbox" name="temas" value="fic"> ficción</br>
-	subir fotografia<br>
-			<input type="file" name="fotografia"></br>
-			<input type="hidden" name="campo oculto" value"shhh"></br>
-seleccion <select name="salas de punk" size="4" multiple="2"></br>
-		<optgroup label="grupos que han tocado este 2025" multiple="true"></br>
-		<input type="range"></br>
-		<input type="time"></br>
-		<input type="data"></br>
-		<option value="godfather">godfather puggies </option></br
-		<option value="trinchera">trinchera nashua</option> </br> 
-		<option value="copernico">copernico kaotiko</option></br> 
-		<option value="independance"> independance kamikazes </option>
-		<label for="Comentario">Comentario</label>
-		<textarea rows="5" cols="300">escribe tu Comentario</textarea>
-		<input type="submit" value="enviar"></input><br>
-		<button type="submit"> 
-		<img src="E:\punky_vk\imagenes\avion.jpg" width="30" height="30"></img></button>
- <button type="reset">RESET</button>
-		</optgroup>
-		</select>
-  </form>
-	</ol>	
-	</section>
-	<footer> redes sociales 
-	<p style="color: blue;"> redes sociales</p>
-	<p class="peque"> fac</p>
-	<p class="grande"> copyright</p>
-	</footer>
-	</body>
-</div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>grupos favoritos de punky_vk de metal</h1>
+        <p class="lead">bourbon kings sagan ummo</p>
+        <div class="cta">
+          <a class="btn" href="#features"> salas de conciertos </a>
+        </div>
+      </div>
+
+      <div class="card" aria-hidden="false">
+        <h3>grupos favoritos de punky de punk</h3>
+        <p style="margin:0.25rem 0 .5rem 0"> lista </p>
+        <ul style="margin:0;padding-left:1.1rem">
+          <li>transmision n</li>
+          <li>kamikazes</li>
+          <li> envidia kotxina</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="features" style="margin-top:20px">
+      <h2>Caracteristicas</h2>
+      <div class="grid features" style="margin-top:12px">
+        <article class="card">
+          <h3>conciertos de metal 2026</h3>
+          <p> def con dos 28 de febrero koma en abril 13 de marzo xpresident </p>
+        </article>
+        <article class="card">
+          <h3>conciertos de punk rock de primer trimestre del ano</h3>
+          <p> 27 de diciembre stafas  de lendakaris muertos el 27 de diciembre de abril no konforme el 14 de marzo 13 de marzo titeres </p>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:20px" class="two-col">
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px">
+          <div class="card" style="text-align:center;padding:14px"><iframe width="560" height="315" src="https://www.youtube.com/embed/CRNsDHS_x7k?si=4crgDMxHL5FRvWcV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          <div class="card" style="text-align:center;padding:14px"><div><video src="videos/envidia_kotxina.mp4" controls></video></div>
+		  </div>
+
+   
+
+      <aside class="card">
+        <h3>Contacto para contrataciones</h3>
+        <form id="contact" action="#" onsubmit="alert('Formulario enviado (demo)');return false;">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tu@correo.com" required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+          <button class="primary" type="submit">Enviar</button>
+        </form>
+      </aside>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <small> punky_vk</small>
+        <nav style="display:flex;gap:8px">
+          <a href="#">Politica</a>
+          <a href="#">Privacidad</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+</body>
 </html>
